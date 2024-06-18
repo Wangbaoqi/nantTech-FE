@@ -26,7 +26,7 @@ const html = [
   {
     name: 'Basic Concepts',
     path: '/docs/html/concepts',
-    icon: IconOverview,
+    icon: IconOverview
   },
   {
     name: 'Elements',
@@ -75,7 +75,7 @@ const html = [
   {
     name: 'Semantics HTML',
     path: '/docs/html/semanticsHTML',
-    icon: DatabaseBackup,
+    icon: DatabaseBackup
   },
   {
     name: 'HTML5 New Features',
@@ -134,58 +134,426 @@ const html = [
       {
         name: 'Security',
         path: '/docs/html/practices/security'
-      },
+      }
     ]
-  },
+  }
 ];
 
 const css = [
   {
-    name: 'Iteration',
-    path: '/docs/asyncPerformance/iteration',
+    name: 'CSS Snapshot',
+    path: '/docs/css/snapshot',
     icon: Shell
   },
   {
-    name: 'Promise',
-    path: '/docs/asyncPerformance/promise',
+    name: 'CSS Concepts',
+    path: '/docs/css/concepts',
     icon: Microscope,
     collapsed: false,
     items: [
       {
-        name: 'Promise Execute',
+        name: 'Introduction',
         collapsed: false,
-        icon: '',
-        path: '/docs/asyncPerformance/promise/promiseExecute'
+        path: '/docs/css/concepts/intro'
       },
       {
-        name: 'Promise Abstract Operation',
+        name: 'Media Types',
         collapsed: false,
         icon: '',
-        path: '/docs/asyncPerformance/promise/promiseOperations'
+        path: '/docs/css/concepts/mediaType'
       },
       {
-        name: 'Promise Constructor',
+        name: 'Visual formatting model',
         collapsed: false,
-        icon: '',
-        path: '/docs/asyncPerformance/promise/promiseConstructor'
+        path: '/docs/css/concepts/vfm'
       },
       {
-        name: 'Promise Job',
+        name: 'Visual effects',
         collapsed: false,
         icon: '',
-        path: '/docs/asyncPerformance/promise/promiseJob'
+        path: '/docs/css/concepts/visualEffects'
       },
       {
-        name: 'Property Promise Constructor',
+        name: 'Page Media',
         collapsed: false,
         icon: '',
-        path: '/docs/asyncPerformance/promise/propertyPromiseConstructor'
+        path: '/docs/css/concepts/pageMedia'
+      }
+    ]
+  },
+  {
+    name: 'CSS Modules - Official',
+    path: '/docs/css/modules/official',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Syntax Level',
+        collapsed: false,
+        path: '/docs/css/modules/syntax'
       },
       {
-        name: 'Property Promise Prototype',
+        name: 'Style Attributes',
         collapsed: false,
         icon: '',
-        path: '/docs/asyncPerformance/promise/propertyPromisePrototype'
+        path: '/docs/css/modules/styleAttributes'
+      },
+      {
+        name: 'Media Queries Level',
+        collapsed: false,
+        path: '/docs/css/modules/mediaQueries'
+      },
+      {
+        name: 'Conditional Rules Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/conditionalRules'
+      },
+      {
+        name: 'Selectors Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/selectors'
+      },
+      {
+        name: 'Namespaces',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/namespaces'
+      },
+      {
+        name: 'Cascading and Inheritance Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/cascadingInheritance'
+      },
+      {
+        name: 'Values and Units Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/valuesUnits'
+      },
+      {
+        name: 'Box Model Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/boxModel'
+      },
+      {
+        name: 'Color Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/color'
+      },
+      {
+        name: 'Backgrounds and Borders ',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/backgroundsBorders'
+      },
+      {
+        name: 'Images Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/images'
+      },
+      {
+        name: 'Fonts Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/fonts'
+      },
+      {
+        name: 'Writing Modes Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/writingModes'
+      },
+      {
+        name: 'Multi-column Layout',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/multiColumn'
+      },
+      {
+        name: 'Flexible Box Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/flex'
+      },
+      {
+        name: 'User Interface Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/ui'
+      },
+      {
+        name: 'Containment Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/containment'
+      },
+      {
+        name: 'Transforms Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/transforms'
+      },
+      {
+        name: 'Compositing and Blending Level ',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/compositing'
+      },
+      {
+        name: 'Easing Functions Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/easing'
+      },
+      {
+        name: 'Namespaces',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/namespaces'
+      },
+      {
+        name: 'Counter Styles Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/counterStyles'
+      }
+    ]
+  },
+  {
+    name: 'CSS Modules - Stable',
+    path: '/docs/css/modules/stable',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Display Module Level',
+        collapsed: false,
+        path: '/docs/css/modules/displayModule'
+      },
+      {
+        name: 'Fragmentation Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/fragmentation'
+      },
+      {
+        name: 'Box Alignment Module Level',
+        collapsed: false,
+        path: '/docs/css/modules/mediaQueries'
+      },
+      {
+        name: 'Shapes Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/shapes'
+      },
+      {
+        name: 'Text Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/textModule'
+      },
+      {
+        name: 'Text Decoration Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/textDecoration'
+      },
+      {
+        name: 'Masking Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/masking'
+      },
+      {
+        name: 'Scroll Snap Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/scrollSnap'
+      },
+      {
+        name: 'Scrollbars StylingModule Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/scrollbars'
+      },
+      {
+        name: 'View Transitions Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/viewTransitions'
+      }
+    ]
+  },
+  {
+    name: 'CSS Modules - Rough',
+    path: '/docs/css/modules/rough',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Transitions Level',
+        collapsed: false,
+        path: '/docs/css/modules/transitions'
+      },
+      {
+        name: 'Grid Layout Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/grid'
+      },
+      {
+        name: 'Will Change Level',
+        collapsed: false,
+        path: '/docs/css/modules/willChange'
+      },
+      {
+        name: 'Filter Effects Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/filterEffects'
+      },
+      {
+        name: 'Box Sizing Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/boxSizing'
+      },
+      {
+        name: 'Lists and Counters Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/listCounters'
+      },
+      {
+        name: 'Logical Properties and Values Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/logicalPropertiesValues'
+      },
+      {
+        name: 'Positioned Layout Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/positionedLayout'
+      },
+      {
+        name: 'Resize Observer',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/resizeObserver'
+      },
+      {
+        name: 'Web Animations',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/webAnimations'
+      },
+      {
+        name: 'Color Adjustment Module Level',
+        collapsed: false,
+        icon: '',
+        path: '/docs/css/modules/colorAdjustment'
+      }
+    ]
+  },
+  {
+    name: 'CSS Architecture',
+    path: '/docs/css/architecture',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'OverView',
+        collapsed: false,
+        path: '/docs/css/architecture/overview'
+      },
+      {
+        name: 'BEM',
+        collapsed: false,
+        path: '/docs/css/architecture/bem'
+      },
+      {
+        name: 'OOCSS',
+        collapsed: false,
+        path: '/docs/css/architecture/oocss'
+      },
+      {
+        name: 'SMACSS',
+        collapsed: false,
+        path: '/docs/css/architecture/smacss'
+      },
+      {
+        name: 'AMCSS',
+        collapsed: false,
+        path: '/docs/css/architecture/amcss'
+      },
+      {
+        name: 'CSSInJs',
+        collapsed: false,
+        path: '/docs/css/architecture/cssinjs'
+      },
+      {
+        name: 'CSS Modules',
+        collapsed: false,
+        path: '/docs/css/architecture/modules'
+      }
+    ]
+  },
+  {
+    name: 'CSS Preprocessors',
+    path: '/docs/css/preprocessors',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Core Explained',
+        collapsed: false,
+        path: '/docs/css/preprocessors/core'
+      },
+      {
+        name: 'Sass',
+        collapsed: false,
+        path: '/docs/css/preprocessors/sass'
+      },
+      {
+        name: 'Less',
+        collapsed: false,
+        path: '/docs/css/preprocessors/less'
+      },
+      {
+        name: 'Stylus',
+        collapsed: false,
+        path: '/docs/css/preprocessors/stylus'
+      },
+      {
+        name: 'PostCSS',
+        collapsed: false,
+        path: '/docs/css/preprocessors/postcss'
+      }
+    ]
+  },
+  {
+    name: 'CSS Framework',
+    path: '/docs/css/framework',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'OverView',
+        collapsed: false,
+        path: '/docs/css/framework/overview'
+      },
+      {
+        name: 'TailwindCSS',
+        collapsed: false,
+        path: '/docs/css/framework/tailwindcss'
       }
     ]
   }
@@ -412,6 +780,7 @@ const reference = [
 
 export const sourceRoutes: sourceRoutesType = {
   html,
+  css
   // asyncPerformance,
   // reference
 };
