@@ -559,6 +559,367 @@ const css = [
   }
 ];
 
+const browser = [
+  {
+    name: 'OverView',
+    path: '/docs/browser/overview',
+    icon: Shell
+  },
+  {
+    name: 'Browser Core',
+    path: '/docs/browser/core',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Browser Architecture',
+        collapsed: false,
+        path: '/docs/browser/core/architecture'
+      },
+      {
+        name: 'Browser Navigation',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/core/navigation'
+      },
+      {
+        name: 'Browser Renderer',
+        collapsed: false,
+        path: '/docs/browser/core/renderer'
+      },
+      {
+        name: 'Browser Compositor',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/core/compositor'
+      }
+    ]
+  },
+  {
+    name: 'Engine V8',
+    path: '/docs/browser/engine',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'JS Design Thought',
+        collapsed: false,
+        path: '/docs/browser/engine/thought'
+      },
+      {
+        name: 'Garbage collection',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/engine/garbageCollect'
+      },
+      {
+        name: 'V8 Basic Environment',
+        collapsed: false,
+        path: '/docs/browser/engine/baseEnv'
+      },
+      {
+        name: 'V8 Execution Process',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/engine/executionProcess'
+      },
+      {
+        name: 'V8 EventLoop',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/engine/eventLoop'
+      }
+    ]
+  },
+  {
+    name: 'Efficiency Tools',
+    path: '/docs/browser/efficiencyTools',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Dev Tools',
+        collapsed: false,
+        path: '/docs/browser/efficiencyTools/devTools'
+      },
+      {
+        name: 'Lighthouse',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/efficiencyTools/Lighthouse'
+      },
+      {
+        name: 'UX Report',
+        collapsed: false,
+        path: '/docs/browser/efficiencyTools/uxReport'
+      },
+      {
+        name: 'PageSpeed',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/efficiencyTools/pageSpeed'
+      },
+      {
+        name: 'Workbox',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/efficiencyTools/workbox'
+      },
+      {
+        name: 'ChromeDriver',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/efficiencyTools/chromeDriver'
+      },
+      {
+        name: 'Puppeteer',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/efficiencyTools/puppeteer'
+      }
+    ]
+  },
+  {
+    name: 'Platform Features',
+    path: '/docs/browser/platform',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Web Capabilities',
+        collapsed: false,
+        path: '/docs/browser/platform/webFeatures'
+      },
+      {
+        name: 'Experiment Web',
+        collapsed: false,
+        icon: '',
+        path: '/docs/browser/platform/experiment'
+      }
+    ]
+  },
+  {
+    name: 'Web Performance',
+    path: '/docs/browser/performance',
+    icon: Shell
+  },
+  {
+    name: 'Web Testing',
+    path: '/docs/browser/testing',
+    icon: Shell
+  },
+  {
+    name: 'Web CSS-UI',
+    path: '/docs/browser/webCss',
+    icon: Shell
+  },
+  {
+    name: 'Web Baseline',
+    path: '/docs/browser/baseline',
+    icon: Shell
+  },
+  {
+    name: 'Responsive Design',
+    path: '/docs/browser/responsive',
+    icon: Shell
+  },
+  {
+    name: 'Web Explore',
+    path: '/docs/browser/explore',
+    icon: Shell,
+    items: [
+      {
+        name: 'Web Accessibility',
+        path: '/docs/browser/explore/accessibility',
+        icon: Shell
+      },
+      {
+        name: 'WebAssembly',
+        path: '/docs/browser/explore/assembly',
+        icon: Shell
+      },
+      {
+        name: 'Modern PWA',
+        path: '/docs/browser/explore/pwa',
+        icon: Shell
+      },
+      {
+        name: 'Web Ai',
+        path: '/docs/browser/explore/ai',
+        icon: Shell
+      },
+      {
+        name: 'Web Network Reliability',
+        path: '/docs/browser/explore/network',
+        icon: Shell
+      },
+      {
+        name: 'Web Safe Security',
+        path: '/docs/browser/explore/safeSecure',
+        icon: Shell
+      },
+      {
+        name: 'Web Payments',
+        path: '/docs/browser/explore/payment',
+        icon: Shell
+      }
+    ]
+  }
+];
+
+const patterns = [
+  {
+    name: 'OverView',
+    path: '/docs/patterns/overview',
+    icon: Shell
+  },
+  {
+    name: 'Design Patterns',
+    path: '/docs/patterns/common',
+    icon: Shell,
+    items: [
+      {
+        name: 'Singleton Pattern',
+        path: '/docs/patterns/common/singleton'
+      },
+      {
+        name: 'Factory Pattern',
+        path: '/docs/patterns/common/factory'
+      },
+      {
+        name: 'Proxy Pattern',
+        path: '/docs/patterns/common/proxy'
+      },
+      {
+        name: 'Observer Pattern',
+        path: '/docs/patterns/common/observer'
+      },
+      {
+        name: 'Prototype Pattern',
+        path: '/docs/patterns/common/prototype'
+      },
+      {
+        name: 'Command Pattern',
+        path: '/docs/patterns/common/command'
+      },
+      {
+        name: 'Flyweight Pattern',
+        path: '/docs/patterns/common/flyweight'
+      },
+      {
+        name: 'Module Pattern',
+        path: '/docs/patterns/common/module'
+      }
+    ]
+  },
+  {
+    name: 'React Patterns',
+    path: '/docs/patterns/react',
+    icon: Shell,
+    items: [
+      {
+        name: 'Container/Presentational Pattern',
+        path: '/docs/patterns/react/conPre'
+      },
+      {
+        name: 'Hooks Pattern',
+        path: '/docs/patterns/react/hooks'
+      },
+      {
+        name: 'Render Props Pattern',
+        path: '/docs/patterns/react/renderProps'
+      },
+      {
+        name: 'Static Rendering',
+        path: '/docs/patterns/react/staticRender'
+      },
+      {
+        name: 'Client-side Rendering',
+        path: '/docs/patterns/react/client'
+      },
+      {
+        name: 'Server-side Rendering',
+        path: '/docs/patterns/react/prototype'
+      },
+      {
+        name: 'Streaming Server-Side Rendering',
+        path: '/docs/patterns/react/streamSsr'
+      },
+      {
+        name: 'Incremental Static Generation',
+        path: '/docs/patterns/react/incrementalStatic'
+      },
+      {
+        name: 'Progressive Hydration',
+        path: '/docs/patterns/react/pwaHydration'
+      },
+      {
+        name: 'Selective Hydration',
+        path: '/docs/patterns/react/selectiveHydration'
+      },
+      {
+        name: 'React Server Components',
+        path: '/docs/patterns/react/rsc'
+      }
+    ]
+  },
+  {
+    name: 'Performance Patterns',
+    path: '/docs/patterns/performance',
+    icon: Shell,
+    items: [
+      {
+        name: 'Bundle Splitting',
+        path: '/docs/patterns/performance/bundleSplit'
+      },
+      {
+        name: 'Compressing JavaScript',
+        path: '/docs/patterns/performance/compressJs'
+      },
+      {
+        name: 'Dynamic Import',
+        path: '/docs/patterns/performance/dynamicImport'
+      },
+      {
+        name: 'Import On Interaction',
+        path: '/docs/patterns/performance/importOnInteraction'
+      },
+      {
+        name: 'Import On Visibility',
+        path: '/docs/patterns/performance/importOnVisibility'
+      },
+      {
+        name: 'Optimize your loading sequence',
+        path: '/docs/patterns/performance/optimizeLoading'
+      },
+      {
+        name: 'Prefetch',
+        path: '/docs/patterns/performance/prefetch'
+      },
+      {
+        name: 'Preload',
+        path: '/docs/patterns/performance/preload'
+      },
+      {
+        name: 'PRPL Pattern',
+        path: '/docs/patterns/performance/prpl'
+      },
+      {
+        name: 'Optimize loading third-parties',
+        path: '/docs/patterns/performance/optimizeThirdParty'
+      },
+      {
+        name: 'Tree Shaking',
+        path: '/docs/patterns/react/treeShaking'
+      },
+      {
+        name: 'List Virtualization',
+        path: '/docs/patterns/react/listVirtualization'
+      }
+    ]
+  }
+];
+
 const reference = [
   {
     name: 'Global Object',
@@ -780,7 +1141,9 @@ const reference = [
 
 export const sourceRoutes: sourceRoutesType = {
   html,
-  css
+  css,
+  browser,
+  patterns
   // asyncPerformance,
   // reference
 };

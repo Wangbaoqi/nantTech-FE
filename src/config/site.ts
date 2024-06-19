@@ -127,13 +127,13 @@ export const siteConfigNav: TypeSiteConfigNavItem[] = [
   {
     title: 'Browser',
     activeLink: 'browser',
-    link: '/docs/browser/',
+    link: '/docs/browser/overview',
     label: 'Browser'
   },
   {
-    title: 'Design Pattern',
-    activeLink: 'pattern',
-    link: '/docs/pattern/',
+    title: 'Patterns',
+    activeLink: 'patterns',
+    link: '/docs/patterns/overview',
     label: 'Pattern'
   },
   {
