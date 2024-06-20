@@ -125,9 +125,9 @@ export const siteConfigNav: TypeSiteConfigNavItem[] = [
     label: 'CSS'
   },
   {
-    title: 'Browser',
-    activeLink: 'browser',
-    link: '/docs/browser/overview',
+    title: 'WebDev',
+    activeLink: 'web',
+    link: '/docs/web/overview',
     label: 'Browser'
   },
   {
@@ -139,7 +139,7 @@ export const siteConfigNav: TypeSiteConfigNavItem[] = [
   {
     title: 'Network',
     activeLink: 'network',
-    link: '/docs/network/',
+    link: '/docs/network/basic',
     label: 'Network'
   }
 ];

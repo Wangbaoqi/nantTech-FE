@@ -559,208 +559,285 @@ const css = [
   }
 ];
 
-const browser = [
+const web = [
   {
     name: 'OverView',
-    path: '/docs/browser/overview',
+    path: '/docs/web/overview',
     icon: Shell
   },
   {
     name: 'Browser Core',
-    path: '/docs/browser/core',
+    path: '/docs/web/browserCore',
     icon: Microscope,
     collapsed: false,
     items: [
       {
+        name: 'Browser Workflow',
+        collapsed: false,
+        path: '/docs/web/browserCore/overview'
+      },
+      {
         name: 'Browser Architecture',
         collapsed: false,
-        path: '/docs/browser/core/architecture'
+        path: '/docs/web/browserCore/architecture'
       },
       {
         name: 'Browser Navigation',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/core/navigation'
+        path: '/docs/web/browserCore/navigation'
       },
       {
         name: 'Browser Renderer',
         collapsed: false,
-        path: '/docs/browser/core/renderer'
+        path: '/docs/web/browserCore/renderer'
       },
       {
         name: 'Browser Compositor',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/core/compositor'
+        path: '/docs/web/browserCore/compositor'
       }
     ]
   },
   {
-    name: 'Engine V8',
-    path: '/docs/browser/engine',
+    name: 'V8 Engine',
+    path: '/docs/web/engine',
     icon: Microscope,
     collapsed: false,
     items: [
       {
         name: 'JS Design Thought',
         collapsed: false,
-        path: '/docs/browser/engine/thought'
+        path: '/docs/web/engine/thought'
       },
       {
         name: 'Garbage collection',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/engine/garbageCollect'
+        path: '/docs/web/engine/garbageCollect'
       },
       {
         name: 'V8 Basic Environment',
         collapsed: false,
-        path: '/docs/browser/engine/baseEnv'
+        path: '/docs/web/engine/baseEnv'
       },
       {
         name: 'V8 Execution Process',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/engine/executionProcess'
+        path: '/docs/web/engine/executionProcess'
       },
       {
         name: 'V8 EventLoop',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/engine/eventLoop'
+        path: '/docs/web/engine/eventLoop'
       }
     ]
   },
   {
-    name: 'Efficiency Tools',
-    path: '/docs/browser/efficiencyTools',
+    name: 'Web Core APIs',
+    path: '/docs/web/core',
     icon: Microscope,
     collapsed: false,
     items: [
       {
-        name: 'Dev Tools',
+        name: 'OverView',
         collapsed: false,
-        path: '/docs/browser/efficiencyTools/devTools'
+        path: '/docs/web/core/overview'
       },
       {
-        name: 'Lighthouse',
+        name: 'URL',
+        collapsed: false,
+        path: '/docs/web/core/url'
+      },
+      {
+        name: 'DOM',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/efficiencyTools/Lighthouse'
+        path: '/docs/web/core/dom'
       },
       {
-        name: 'UX Report',
-        collapsed: false,
-        path: '/docs/browser/efficiencyTools/uxReport'
-      },
-      {
-        name: 'PageSpeed',
+        name: 'Storage',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/efficiencyTools/pageSpeed'
+        path: '/docs/web/core/storage'
       },
       {
-        name: 'Workbox',
+        name: 'XMLHttpRequest',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/efficiencyTools/workbox'
+        path: '/docs/web/core/xhr'
       },
       {
-        name: 'ChromeDriver',
+        name: 'Encoding',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/efficiencyTools/chromeDriver'
+        path: '/docs/web/core/encode'
       },
       {
-        name: 'Puppeteer',
+        name: 'Fetch',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/efficiencyTools/puppeteer'
+        path: '/docs/web/core/fetch'
+      },
+      {
+        name: 'File System',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/core/filesystem'
+      },
+      {
+        name: 'Fullscreen',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/core/fullscreen'
+      },
+      {
+        name: 'Web Components',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/core/webComponents'
+      },
+      {
+        name: 'WebSockets',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/core/websockets'
       }
     ]
   },
   {
-    name: 'Platform Features',
-    path: '/docs/browser/platform',
+    name: 'Web Platform Features',
+    path: '/docs/web/platform',
     icon: Microscope,
     collapsed: false,
     items: [
       {
         name: 'Web Capabilities',
         collapsed: false,
-        path: '/docs/browser/platform/webFeatures'
+        path: '/docs/web/platform/webFeatures'
       },
       {
         name: 'Experiment Web',
         collapsed: false,
         icon: '',
-        path: '/docs/browser/platform/experiment'
+        path: '/docs/web/platform/experiment'
       }
     ]
   },
   {
     name: 'Web Performance',
-    path: '/docs/browser/performance',
+    path: '/docs/web/performance',
     icon: Shell
   },
   {
     name: 'Web Testing',
-    path: '/docs/browser/testing',
+    path: '/docs/web/testing',
     icon: Shell
   },
   {
     name: 'Web CSS-UI',
-    path: '/docs/browser/webCss',
+    path: '/docs/web/webCss',
     icon: Shell
   },
   {
     name: 'Web Baseline',
-    path: '/docs/browser/baseline',
+    path: '/docs/web/baseline',
     icon: Shell
   },
   {
     name: 'Responsive Design',
-    path: '/docs/browser/responsive',
+    path: '/docs/web/responsive',
     icon: Shell
   },
   {
+    name: 'Efficiency Tools',
+    path: '/docs/web/efficiencyTools',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Dev Tools',
+        collapsed: false,
+        path: '/docs/web/efficiencyTools/devTools'
+      },
+      {
+        name: 'Lighthouse',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/efficiencyTools/Lighthouse'
+      },
+      {
+        name: 'UX Report',
+        collapsed: false,
+        path: '/docs/web/efficiencyTools/uxReport'
+      },
+      {
+        name: 'PageSpeed',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/efficiencyTools/pageSpeed'
+      },
+      {
+        name: 'Workbox',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/efficiencyTools/workbox'
+      },
+      {
+        name: 'ChromeDriver',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/efficiencyTools/chromeDriver'
+      },
+      {
+        name: 'Puppeteer',
+        collapsed: false,
+        icon: '',
+        path: '/docs/web/efficiencyTools/puppeteer'
+      }
+    ]
+  },
+  {
     name: 'Web Explore',
-    path: '/docs/browser/explore',
+    path: '/docs/web/explore',
     icon: Shell,
     items: [
       {
         name: 'Web Accessibility',
-        path: '/docs/browser/explore/accessibility',
+        path: '/docs/web/explore/accessibility',
         icon: Shell
       },
       {
         name: 'WebAssembly',
-        path: '/docs/browser/explore/assembly',
+        path: '/docs/web/explore/assembly',
         icon: Shell
       },
       {
         name: 'Modern PWA',
-        path: '/docs/browser/explore/pwa',
+        path: '/docs/web/explore/pwa',
         icon: Shell
       },
       {
         name: 'Web Ai',
-        path: '/docs/browser/explore/ai',
+        path: '/docs/web/explore/ai',
         icon: Shell
       },
       {
         name: 'Web Network Reliability',
-        path: '/docs/browser/explore/network',
+        path: '/docs/web/explore/network',
         icon: Shell
       },
       {
         name: 'Web Safe Security',
-        path: '/docs/browser/explore/safeSecure',
+        path: '/docs/web/explore/safeSecure',
         icon: Shell
       },
       {
         name: 'Web Payments',
-        path: '/docs/browser/explore/payment',
+        path: '/docs/web/explore/payment',
         icon: Shell
       }
     ]
@@ -920,230 +997,117 @@ const patterns = [
   }
 ];
 
-const reference = [
+const network = [
   {
-    name: 'Global Object',
-    path: '/docs/reference/global/value',
+    name: 'Networking Basic',
+    path: '/docs/network/basic',
+    icon: IconOverview
+  },
+  {
+    name: 'Network Devices',
+    path: '/docs/network/devices',
+    icon: IconOverview
+  },
+  {
+    name: 'Network Operating Systems',
+    path: '/docs/network/operatingSystem',
+    icon: IconOverview
+  },
+  {
+    name: 'Data transmission Techniques',
+    path: '/docs/network/transmission',
+    icon: IconOverview
+  },
+  {
+    name: 'Networking Protocols',
+    path: '/docs/network/protocols',
+    icon: IconOverview
+  },
+
+  {
+    name: 'HTTP Protocol',
+    path: '/docs/network/http',
     icon: IconOverview,
     collapsed: false,
     items: [
       {
-        name: 'Global Value',
-        path: '/docs/reference/global/value'
+        name: 'HTTP Basics',
+        path: '/docs/network/http/basics'
       },
       {
-        name: 'Global Function',
-        path: '/docs/reference/global/function'
+        name: 'HTTP Headers',
+        path: '/docs/network/http/headers'
       },
       {
-        name: 'Global Constructor',
-        path: '/docs/reference/global/constructor'
+        name: 'HTTP Cookies and Session',
+        path: '/docs/network/http/cookiesSession'
       },
       {
-        name: 'Global Other',
-        path: '/docs/reference/global/other'
+        name: 'HTTP Caching',
+        path: '/docs/network/http/cache'
+      },
+      {
+        name: 'HTTP Authentication',
+        path: '/docs/network/http/auth'
+      },
+      {
+        name: 'HTTP RESTful',
+        path: '/docs/network/http/rest'
+      },
+      {
+        name: 'Introduction HTTP2',
+        path: '/docs/network/http/http2'
+      },
+      {
+        name: 'HTTP Security',
+        path: '/docs/network/http/security'
+      },
+      {
+        name: 'HTTP Connection Management',
+        path: '/docs/network/http/connection'
+      },
+      {
+        name: 'HTTP Proxies',
+        path: '/docs/network/http/proxy'
       }
     ]
   },
   {
-    name: 'Fundamental Object',
-    path: '/docs/reference/fundamental',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Object Objects',
-        path: '/docs/reference/fundamental/object'
-      },
-      {
-        name: 'Function Objects',
-        path: '/docs/reference/fundamental/function'
-      },
-      {
-        name: 'Boolean Objects',
-        path: '/docs/reference/fundamental/boolean'
-      },
-      {
-        name: 'Symbol Objects',
-        path: '/docs/reference/fundamental/symbol'
-      },
-      {
-        name: 'Error Objects',
-        path: '/docs/reference/fundamental/error'
-      }
-    ]
+    name: 'Network Security',
+    path: '/docs/network/security',
+    icon: IconOverview
   },
   {
-    name: 'Numbers Dates',
-    path: '/docs/reference/numbers',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Number Objects',
-        path: '/docs/reference/numbers/number'
-      },
-      {
-        name: 'Bigint Objects',
-        path: '/docs/reference/numbers/bigint'
-      },
-      {
-        name: 'Math Objects',
-        path: '/docs/reference/numbers/math'
-      },
-      {
-        name: 'Date Objects',
-        path: '/docs/reference/numbers/date'
-      }
-    ]
+    name: 'Wireless Networking',
+    path: '/docs/network/wireless',
+    icon: IconOverview
   },
   {
-    name: 'Text Processing',
-    path: '/docs/reference/text',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'String Objects',
-        path: '/docs/reference/text/string'
-      },
-      {
-        name: 'RegExp Objects',
-        path: '/docs/reference/text/regexp'
-      }
-    ]
+    name: 'Network Design',
+    path: '/docs/network/design',
+    icon: IconOverview
   },
   {
-    name: 'Indexed Collections',
-    path: '/docs/reference/indexed',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Array Objects',
-        path: '/docs/reference/indexed/array'
-      },
-      {
-        name: 'TypedArray Objects',
-        path: '/docs/reference/indexed/typedArray'
-      }
-    ]
+    name: 'Network Tools',
+    path: '/docs/network/tools',
+    icon: IconOverview
   },
   {
-    name: 'Keyed Collections',
-    path: '/docs/reference/keyed',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Map Objects',
-        path: '/docs/reference/keyed/map'
-      },
-      {
-        name: 'Set Objects',
-        path: '/docs/reference/keyed/set'
-      },
-      {
-        name: 'Weakmap Objects',
-        path: '/docs/reference/keyed/weakmap'
-      },
-      {
-        name: 'Weakset Objects',
-        path: '/docs/reference/keyed/weakset'
-      }
-    ]
+    name: 'Advanced Networking Concepts',
+    path: '/docs/network/advancedConcepts',
+    icon: IconOverview
   },
   {
-    name: 'Structured Data',
-    path: '/docs/reference/structured',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'ArrayBuffer Objects',
-        path: '/docs/reference/structured/arrayBuffer'
-      },
-      {
-        name: 'SharedArrayBuffer Objects',
-        path: '/docs/reference/structured/sharedArrayBuffer'
-      },
-      {
-        name: 'DataView Objects',
-        path: '/docs/reference/structured/dataView'
-      },
-      {
-        name: 'Atomic Objects',
-        path: '/docs/reference/structured/atomic'
-      },
-      {
-        name: 'JSON Objects',
-        path: '/docs/reference/structured/json'
-      }
-    ]
-  },
-  {
-    name: 'Control Abstraction Object',
-    path: '/docs/reference/control',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Iteration Objects',
-        path: '/docs/reference/control/iteration'
-      },
-      {
-        name: 'Promise Objects',
-        path: '/docs/reference/control/promise'
-      },
-      {
-        name: 'GeneratorFunction Objects',
-        path: '/docs/reference/control/generatorFunction'
-      },
-      {
-        name: 'AsyncGeneratorFunction Objects',
-        path: '/docs/reference/control/asyncGeneratorFunction'
-      },
-      {
-        name: 'Generator Object',
-        path: '/docs/reference/control/generatorObject'
-      },
-      {
-        name: 'AsyncGenerator Object',
-        path: '/docs/reference/control/asyncGeneratorObject'
-      },
-      {
-        name: 'AsyncFunction Object',
-        path: '/docs/reference/control/asyncFunction'
-      }
-    ]
-  },
-  {
-    name: 'Reflection',
-    path: '/docs/reference/reflection',
-    icon: IconOverview,
-    collapsed: false,
-    items: [
-      {
-        name: 'Reflect Objects',
-        path: '/docs/reference/reflection/reflect'
-      },
-      {
-        name: 'Proxy Objects',
-        path: '/docs/reference/reflection/proxy'
-      },
-      {
-        name: 'Module Namespace Objects',
-        path: '/docs/reference/reflection/namespace'
-      }
-    ]
+    name: 'Cloud Networking',
+    path: '/docs/network/cloud',
+    icon: IconOverview
   }
 ];
 
 export const sourceRoutes: sourceRoutesType = {
   html,
   css,
-  browser,
-  patterns
-  // asyncPerformance,
-  // reference
+  web,
+  patterns,
+  network
 };
