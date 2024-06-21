@@ -3,8 +3,8 @@ export const COLORS_BY_TAGS = {
   CSS: 'dark:bg-red-300 bg-red-500/50',
   Network: 'dark:bg-yellow-300 bg-yellow-600/50',
   Browser: 'dark:bg-purple-300 bg-purple-600/50',
-  Pattern: 'dark:bg-green-300 bg-green-600/50'
-  // Toolchain: 'dark:bg-cyan-300 bg-cyan-600/50',
+  Pattern: 'dark:bg-green-300 bg-green-600/50',
+  Engineering: 'dark:bg-cyan-300 bg-cyan-600/50'
   // EVENT: 'dark:bg-purple-300 bg-purple-600/50'
 } as const;
 
@@ -18,12 +18,12 @@ export const TITLES_BY_TAG: {
   Browser:
     'bg-clip-text text-transparent select-none bg-gradient-to-r from-purple-600 to-purple-500 dark:from-purple-400 dark:to-purple-100',
   Pattern:
-    'bg-clip-text text-transparent select-none bg-gradient-to-r from-green-600 to-green-500 dark:from-green-300 dark:to-green-100'
+    'bg-clip-text text-transparent select-none bg-gradient-to-r from-green-600 to-green-500 dark:from-green-300 dark:to-green-100',
+  Engineering:
+    'bg-clip-text text-transparent select-none bg-gradient-to-r from-cyan-600 to-cyan-500 dark:from-cyan-400 dark:to-cyan-100'
+
   // Structure:
   //   'bg-clip-text text-transparent select-none bg-gradient-to-r from-green-600 to-green-500 dark:from-green-300 dark:to-green-100',
-
-  // Toolchain:
-  //   'bg-clip-text text-transparent select-none bg-gradient-to-r from-cyan-600 to-cyan-500 dark:from-cyan-400 dark:to-cyan-100'
 } as const;
 
 export const BUTTON_BY_TAGS = {
@@ -34,9 +34,9 @@ export const BUTTON_BY_TAGS = {
   Browser:
     'bg-purple-500/10 text-purple-700 hover:text-purple-700 dark:text-purple-300 dark:bg-purple-300/10 hover:bg-purple-500/20 dark:hover:bg-purple-300/20',
   Pattern:
-    'bg-green-500/10 text-green-700 hover:text-green-700 dark:text-green-300 dark:bg-green-300/10 hover:bg-green-500/20 dark:hover:bg-green-300/20'
-  // Toolchain:
-  //   'bg-cyan-500/10 text-cyan-700 hover:text-cyan-700 dark:text-cyan-300 dark:bg-cyan-300/10 hover:bg-cyan-500/20 dark:hover:bg-cyan-300/20',
+    'bg-green-500/10 text-green-700 hover:text-green-700 dark:text-green-300 dark:bg-green-300/10 hover:bg-green-500/20 dark:hover:bg-green-300/20',
+  Engineering:
+    'bg-cyan-500/10 text-cyan-700 hover:text-cyan-700 dark:text-cyan-300 dark:bg-cyan-300/10 hover:bg-cyan-500/20 dark:hover:bg-cyan-300/20'
   // MEDIUM:
   //   'bg-yellow-500/10 text-yellow-700 hover:text-yellow-700 dark:text-yellow-300 dark:bg-yellow-300/10 hover:bg-yellow-500/20 dark:hover:bg-yellow-300/20',
 
@@ -54,11 +54,10 @@ export const BORDERS_BY_DIFFICULTY: {
   Browser:
     'dark:hover:border-purple-200 hover:border-purple-500 dark:group-focus:border-purple-200 group-focus:border-purple-500',
   Pattern:
-    'dark:hover:border-green-200 hover:border-green-500 dark:group-focus:border-green-200 group-focus:border-green-500'
+    'dark:hover:border-green-200 hover:border-green-500 dark:group-focus:border-green-200 group-focus:border-green-500',
   // aa: 'dark:hover:border-yellow-200 hover:border-yellow-500 dark:group-focus:border-yellow-200 group-focus:border-yellow-500',
-
-  // Toolchain:
-  //   'dark:hover:border-cyan-200 hover:border-cyan-500 dark:group-focus:border-cyan-200 group-focus:border-cyan-500'
+  Engineering:
+    'dark:hover:border-cyan-200 hover:border-cyan-500 dark:group-focus:border-cyan-200 group-focus:border-cyan-500'
 };
 
 export const SHADOWS_BY_DIFFICULTY: {
@@ -71,10 +70,9 @@ export const SHADOWS_BY_DIFFICULTY: {
   Browser:
     'hover:shadow-[0_0_16px_-2.4px_#FBDBA7]  group-focus:shadow-[0_0_16px_-2.4px_#FBDBA7] dark:hover:shadow-[0_0_16px_-2.4px_#FBDBA7] dark:group-focus:shadow-[0_0_16px_-2.4px_#FBDBA7]',
   Pattern:
-    'hover:shadow-[0_0_16px_-2.4px_#FBDBA7] hover:shadow-green-200 group-focus:shadow-easy dark:hover:shadow-easy-dark dark:group-focus:shadow-easy-dark'
-
-  // Toolchain:
-  //   'hover:shadow-[0_0_16px_-2.4px_#bae6fd] group-focus:shadow-[0_0_16px_-2.4px_#bae6fd] dark:hover:shadow-[0_0_16px_-2.4px_#bae6fd] dark:group-focus:shadow-[0_0_16px_-2.4px_#bae6fd]'
+    'hover:shadow-[0_0_16px_-2.4px_#FBDBA7] hover:shadow-green-200 group-focus:shadow-easy dark:hover:shadow-easy-dark dark:group-focus:shadow-easy-dark',
+  Engineering:
+    'hover:shadow-[0_0_16px_-2.4px_#bae6fd] group-focus:shadow-[0_0_16px_-2.4px_#bae6fd] dark:hover:shadow-[0_0_16px_-2.4px_#bae6fd] dark:group-focus:shadow-[0_0_16px_-2.4px_#bae6fd]'
 };
 
 export const COLORS_BY_DIFFICULTY: {
@@ -85,7 +83,7 @@ export const COLORS_BY_DIFFICULTY: {
   Network: 'dark:bg-yellow-400 bg-yellow-700 text-white dark:text-black ',
   Browser: 'dark:bg-purple-400 bg-purple-700 text-white dark:text-black ',
   Pattern: 'dark:bg-green-400 bg-green-700 text-white dark:text-black ',
-  Toolchain: 'dark:bg-cyan-400 bg-cyan-700 text-white dark:text-black '
+  Engineering: 'dark:bg-cyan-400 bg-cyan-700 text-white dark:text-black '
 };
 
 type TypeSiteConfigNavItem = {
@@ -141,5 +139,11 @@ export const siteConfigNav: TypeSiteConfigNavItem[] = [
     activeLink: 'network',
     link: '/docs/network/basic',
     label: 'Network'
+  },
+  {
+    title: 'Engineering',
+    activeLink: 'engineering',
+    link: '/docs/engineering/basic',
+    label: 'Engineering'
   }
 ];
