@@ -49,10 +49,10 @@ export const NavBar = ({ width = 'xl' }: INavBar) => {
       }}
     >
       <NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
-        <NavbarBrand as='li' className='gap-1 max-w-fit mr-4'>
+        <NavbarBrand as='li' className='gap-1 mr-4'>
           <NextLink href='/' className='flex items-center gap-1'>
             <NantIcon />
-            <p className='font-bold text-lg'>{siteConfig.title}</p>
+            <h1 className='font-bold text-lg w-[190px]'>{siteConfig.title}</h1>
           </NextLink>
         </NavbarBrand>
         <ul className='hidden lg:flex gap-5 justify-start items-center'>
@@ -72,7 +72,10 @@ export const NavBar = ({ width = 'xl' }: INavBar) => {
       </NavbarContent>
 
       {/* mobile show */}
-      <NavbarContent className='flex w-full gap-2 sm:hidden' justify='end'>
+      <NavbarContent
+        className='flex w-full gap-2 sm:hidden flex-grow-0'
+        justify='end'
+      >
         <NavbarItem className='flex h-full items-center'>
           <Link
             isExternal

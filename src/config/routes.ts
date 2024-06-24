@@ -1104,10 +1104,292 @@ const network = [
   }
 ];
 
+const engineering = [
+  {
+    name: 'OverView',
+    path: '/docs/engineering/overview',
+    icon: IconOverview
+  },
+  {
+    name: 'Development Environment',
+    path: '/docs/engineering/devEnv',
+    icon: IconOverview
+  },
+  {
+    name: 'Build Tools',
+    path: '/docs/engineering/build',
+    icon: Microscope,
+    collapsed: false,
+    items: [
+      {
+        name: 'Build Tools Overview',
+        collapsed: false,
+        path: '/docs/engineering/build/overview'
+      },
+      {
+        name: 'Webpack',
+        collapsed: false,
+        path: '/docs/engineering/build/webpack'
+      },
+      {
+        name: 'Vite',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/vite'
+      },
+      {
+        name: 'Esbuild',
+        collapsed: false,
+        path: '/docs/engineering/build/esbuild'
+      },
+      {
+        name: 'Rollup',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/rollup'
+      },
+      {
+        name: 'Gulp',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/gulp'
+      },
+      {
+        name: 'NPM Scripts',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/script'
+      },
+      {
+        name: 'Package Manager',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/pm'
+      },
+      {
+        name: 'CSS Preprocessors',
+        collapsed: false,
+        icon: '',
+        path: '/docs/engineering/build/style'
+      }
+    ]
+  },
+  {
+    name: 'Code Quality',
+    path: '/docs/engineering/codeQuality',
+    icon: IconOverview,
+    collapsed: false,
+    items: [
+      {
+        name: 'Code Formatting',
+        collapsed: false,
+        path: '/docs/engineering/codeQuality/formatting'
+      },
+      {
+        name: 'Code Checking',
+        collapsed: false,
+        path: '/docs/engineering/codeQuality/checking'
+      },
+      {
+        name: 'Type Checking',
+        collapsed: false,
+        path: '/docs/engineering/codeQuality/typeChecking'
+      },
+      {
+        name: 'Testing',
+        collapsed: false,
+        path: '/docs/engineering/codeQuality/testing'
+      }
+    ]
+  },
+  {
+    name: 'Version Control',
+    path: '/docs/engineering/versionControl',
+    icon: IconOverview
+  },
+  {
+    name: 'Project Management',
+    path: '/docs/engineering/pm',
+    icon: IconOverview
+  },
+  {
+    name: 'Deploy',
+    path: '/docs/engineering/deploy',
+    icon: IconOverview
+  },
+  {
+    name: 'Performance Optimization',
+    path: '/docs/engineering/performance',
+    icon: IconOverview,
+    collapsed: false,
+    items: [
+      {
+        name: 'OverView',
+        collapsed: false,
+        path: '/docs/engineering/performance/overview'
+      }
+    ]
+  },
+  {
+    name: 'Web Security',
+    path: '/docs/engineering/security',
+    icon: IconOverview
+  },
+  {
+    name: 'User Experience',
+    path: '/docs/engineering/ue',
+    icon: IconOverview
+  },
+  {
+    name: 'Internationalize',
+    path: '/docs/engineering/i18n',
+    icon: IconOverview
+  }
+];
+
+const ts = [
+  {
+    name: 'OverView',
+    path: '/docs/ts/overview',
+    icon: IconOverview
+  },
+  {
+    name: 'Types',
+    path: '/docs/ts/types',
+    icon: IconOverview
+  },
+  {
+    name: 'Type Guards/ Narrowing',
+    path: '/docs/ts/guard',
+    icon: IconOverview
+  },
+  {
+    name: 'Functions',
+    path: '/docs/ts/function',
+    icon: IconOverview
+  },
+  {
+    name: 'Interfaces',
+    path: '/docs/ts/interface',
+    icon: IconOverview
+  },
+  {
+    name: 'Classes',
+    path: '/docs/ts/classes',
+    icon: IconOverview
+  },
+  {
+    name: 'Generics',
+    path: '/docs/ts/generics',
+    icon: IconOverview
+  },
+  {
+    name: 'Utility Types',
+    path: '/docs/ts/utility',
+    icon: IconOverview
+  },
+  {
+    name: 'Advanced Types',
+    path: '/docs/ts/advancedType',
+    icon: IconOverview
+  },
+  {
+    name: 'Modules',
+    path: '/docs/ts/module',
+    icon: IconOverview
+  }
+];
+
+const node = [
+  {
+    name: 'OverView',
+    path: '/docs/node/overview',
+    icon: IconOverview
+  },
+  {
+    name: 'Modules',
+    path: '/docs/node/modules',
+    icon: IconOverview
+  },
+  {
+    name: 'NPM',
+    path: '/docs/node/npm',
+    icon: IconOverview
+  },
+  {
+    name: 'Error Handling',
+    path: '/docs/node/errorHandle',
+    icon: IconOverview
+  },
+  {
+    name: 'Asynchronous Programming',
+    path: '/docs/node/async',
+    icon: IconOverview
+  },
+  {
+    name: 'Working with Files',
+    path: '/docs/node/files',
+    icon: IconOverview
+  },
+  {
+    name: 'Command Line Apps',
+    path: '/docs/node/cli',
+    icon: IconOverview
+  },
+  {
+    name: 'Working with Apis',
+    path: '/docs/node/api',
+    icon: IconOverview
+  },
+  {
+    name: 'Template Engine',
+    path: '/docs/node/templating',
+    icon: IconOverview
+  },
+  {
+    name: 'Working with Databases',
+    path: '/docs/node/database',
+    icon: IconOverview
+  },
+  {
+    name: 'Testing',
+    path: '/docs/node/test',
+    icon: IconOverview
+  },
+  {
+    name: 'Logging',
+    path: '/docs/node/log',
+    icon: IconOverview
+  },
+  {
+    name: 'Keeping App Running',
+    path: '/docs/node/run',
+    icon: IconOverview
+  },
+  {
+    name: 'Thread',
+    path: '/docs/node/threads',
+    icon: IconOverview
+  },
+  {
+    name: 'Streams',
+    path: '/docs/node/stream',
+    icon: IconOverview
+  },
+  {
+    name: 'Common Built-in Modules',
+    path: '/docs/node/buildin',
+    icon: IconOverview
+  }
+];
+
 export const sourceRoutes: sourceRoutesType = {
   html,
   css,
   web,
   patterns,
-  network
+  network,
+  engineering,
+  ts,
+  node
 };
